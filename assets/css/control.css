@@ -1,0 +1,96 @@
+/*==================================
+Font Variable
+==================================*/
+
+:root {
+    --uc-primary-font: "Spectral", serif;
+}
+
+:root {
+    --uc-secondary-font: "Spectral", serif;
+}
+
+:root {
+    --uc-text-font: "Spectral", serif;
+}
+
+:root {
+    --uc-accent-font: "Spectral", serif;
+}
+
+:root {
+    --uc-general-font: "Spectral", serif;
+}
+
+
+
+/*==================================
+Theme Color All Codes Variable
+==================================*/
+
+:root {
+    --uc-primary-color: #666;
+    /* theme primary color */
+}
+
+:root {
+    --uc-secondary-color: #16181a;
+    /* theme secondary color */
+}
+
+:root {
+    --uc-white-color: #fff;
+    /* theme white font color */
+}
+
+:root {
+    --uc-light-color: #f5f5f5;
+    /* theme light gray color */
+}
+
+:root {
+    --uc-gray-color: #b5b5b5;
+    /* theme gray color */
+}
+
+:root {
+    --uc-dark-color: #000;
+    /* theme dark color ok*/
+}
+
+:root {
+    --uc-accent-color: #666;
+    /* theme accent color ok*/
+}
+
+:root {
+    --uc-default-color: #626262;
+    /* theme gray color */
+}
+
+:root {
+    --uc-border-color: #e7e7e7;
+    /* default border color */
+}
+
+:root {
+    --uc-text-gray-color: #888;
+    /* theme gray color */
+}
+
+:root {
+    --uc-text-light-color: #aeaeae;
+    /* theme gray color */
+}
+
+:root {
+    --uc-primary-color-rgba: 102, 102, 102;
+}
+
+:root {
+    --uc-secondary-color-rgba: 22, 24, 26;
+}
+
+:root {
+    --uc-dark-color-rgba: 0, 0, 0;
+}

@@ -1,0 +1,1427 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from unicoderbd.com/template/bewin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jun 2025 05:18:00 GMT -->
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bewin - Real Estate HTML Template">
+    <meta name="keywords"
+        content="real estate, house, realtor, property, directory, listing, agent, developer, business, idx, housing, agency, rental, map, black">
+    <meta name="author" content="unicoder">
+    <title>Priyam Shaurya | (PS) Apartment</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/bewin-white.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-K5mCkQb7r+V4W0HQP0PxqW7zWVF2X6G7bXslNm2Xr+1l8qMhJfkmc2HcVJkE5c5WkX7c7wxh4R5VbKjF4r5dZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+    <!--  CSS Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/layerslider.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/control.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-K5mCkQb7r+V4W0HQP0PxqW7zWVF2X6G7bXslNm2Xr+1l8qMhJfkmc2HcVJkE5c5WkX7c7wxh4R5VbKjF4r5dZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        
+        /* overlay */
+        .popup-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            /* hidden by default */
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+
+        /* popup card */
+     .popup-card {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 65%;
+    width: 100%;
+    max-height: 90vh; 
+    overflow-y: auto; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+    .popup-card img {
+    width: 100%;
+    height: auto;  /* ya phir height: 600px; if big image needed */
+}
+        /* content area (buttons) */
+        .popup-body {
+            padding: 0px;
+        }
+
+        .popup-body .btn {
+            display: inline-block;
+            padding: 0px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 6px 4px;
+        }
+
+        .btn-contact {
+            background: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-close {
+            background: transparent;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        a#contactBtn:hover {
+            background: #ffc107;
+            color: #ffffff;
+        }
+
+        /* close X at top-right */
+        .popup-close-x {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background: rgb(255 255 255 / 94%);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 700;
+            border: none;
+        }
+
+        /* small responsive tweaks */
+        @media (max-width: 480px) {
+            .popup-card {
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body class="home-page">
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="page_wrapper" class="bg-light straight-shape shape-size-500 shape-bg-secondary">
+        <!--============== Header Section Start ==============-->
+        <header class="main-header header-style-2">
+      <div class="top-header">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- COLUMN 1: CONTACT -->
+            <div class="col-md-4 col-12">
+                <ul class="list-color-white d-flex justify-content-md-start justify-content-center gap-2 mb-0">
+                    <li>
+                        <a href="tel:+91-9559853222" style="color:#fff;">
+                            <i class="fa fa-phone me-2"></i>
+                            +91-9559853222, +91-9956259444
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 2: RERA DETAILS -->
+            <div class="col-md-5 col-12 mt-md-0 mt-2">
+                <ul class="list-color-white d-flex justify-content-center gap-3 mb-0">
+                    <li class="d-flex align-items-center">
+                        <i class="fa fa-id-badge me-2"></i>
+                        <span><strong>UPRERAPRJ103248/10/2024</strong></span>
+                    </li>
+                    <li>
+                        <a href="https://www.up-rera.in" target="_blank" style="color:#fff;">
+                            <i class="fa fa-globe me-1"></i>
+                            www.up-rera.in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 3: SOCIAL ICONS -->
+            <div class="col-md-3 col-12 mt-md-0 mt-2">
+                <ul class="navbar-top list-color-white d-flex justify-content-md-end justify-content-center gap-3 mb-0">
+                    <li><a href="https://www.facebook.com/profile.php?id=61584291022015#" target="_blank" style="color:#fff;"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/teamshauryainfrazone/" target="_blank" style="color:#fff;"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/@teamshauryaInfrazone" target="_blank" style="color:#fff;"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/team-shaurya/about/?viewAsMember=true" target="_blank" style="color:#fff;"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div class="main-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav
+                                class="navbar navbar-expand-lg nav-white nav-active-primary nav-hover-primary nav-line-active">
+
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="index.html">
+                                    <img class="nav-logo" src="assets/images/logo/bewin-white.png" alt="logo">
+                                </a>
+
+                                <!-- Toggle -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent">
+                                    <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                    <ul class="navbar-nav mx-auto">
+
+                                        <!-- Home -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+
+                                        <!-- About Us -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">About Us</a>
+                                        </li>
+
+                                        <!-- Projects Dropdown -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#"
+                                                data-bs-toggle="dropdown">Projects</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="ps-apartment.html">PS Apartment</a>
+                                                </li>
+                                              
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Login Button -->
+                                    <a href="assets/images/Brochure.pdf"
+                                        class="btn btn-dark btn-hover-secondary hover-flash-move" target="_blank">Download E-Brochure</a>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!--============== Header Section End ==============-->
+
+        <!--============== Slider Area Start ==============-->
+        <div class="full-row p-0 overflow-hidden">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="slider" class="overflow-hidden"
+                            style="width:1200px; height:720px; margin:0 auto; margin-bottom: 0px;">
+
+                            <!-- SLIDE 1 : PS APARTMENT -->
+                            <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:20000;">
+                                <img width="1920" height="1080" src="assets/images/slider-1.jpg" class="ls-bg" alt="">
+
+                                <!-- TOP TAG -->
+                                <p style="top:15%; left:32px; padding: 0 12px; line-height: 35px;
+                                font-size: 14px; letter-spacing: 2px; font-weight: 500; text-transform: uppercase;"
+                                    class="ls-l color-dark bg-white font-primary ls-hide-phone"
+                                    data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:500;">
+                                    PS APARTMENT – VRINDAVAN YOJNA
+                                </p>
+
+                                <!-- MAIN HEADING -->
+                                <h2 style="top:40%; left:32px; font-size:60px; line-height: 60px; width: 450px; color:#fff;"
+                                    class="ls-l" data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:1000;">
+                                    Premium 2 & 3 BHK <br> Modern Residences <br> For Urban Living
+                                </h2>
+
+                                <!-- SUB TEXT -->
+                                <p style="top:62%; left:32px; width:500px; font-size:18px; line-height:28px; color:#fff;"
+                                    class="ls-l ls-hide-phone"
+                                    data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2000;">
+                                    Located at SEC-14, Vrindavan Yojna — Close to SGPGI, Lulu Mall & Shaheed Path. <br>
+                                    A perfect blend of comfort, architecture & premium lifestyle.
+                                </p>
+
+                                <!-- VIDEO BUTTON -->
+                                <div style="font-size:15px; top:78%; left:32px;" class="ls-l ls-hide-phone"
+                                    data-ls="offsetyin:40; delayin:3000;">
+                                    <div class="simple-video-play d-flex">
+                                        <div class="position-relative d-inline-block">
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=rNOiwUhv0uw"
+                                                class="rounded-circle position-relative bg-white" style="z-index: 10">
+                                                <i
+                                                    class="icon-play color-dark position-relative top-50 start-50 translate-middle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                              
+
+                               
+                            </div>
+                            <!-- END SLIDE 1 -->
+
+
+                            <!-- SLIDE 2 : GROUP HOUSING PROJECT -->
+                            <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:20000;">
+                                <img width="1920" height="1080" src="assets/images/slider-2.jpg" class="ls-bg" alt="">
+
+                                <!-- TOP TAG -->
+                                <p style="top:15%; left:32px; padding: 0 12px; line-height: 35px; font-size: 14px;
+                                letter-spacing: 2px; font-weight: 500; text-transform: uppercase;"
+                                    class="ls-l color-dark bg-white font-primary ls-hide-phone"
+                                    data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:500;">
+                                    TEAM SHAURYA – GROUP HOUSING
+                                </p>
+
+                                <!-- MAIN HEADING -->
+                                <h2 style="top:40%; left:32px; font-size:60px; line-height:60px; width:420px; color:#fff;"
+                                    class="ls-l" data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:1000;">
+                                    A Modern Community <br> of 2 & 3 BHK <br> Family Homes
+                                </h2>
+
+                                <!-- SUB TEXT -->
+                                <p style="top:62%; left:32px; width:500px; font-size:18px; line-height:28px; color:#fff;"
+                                    class="ls-l ls-hide-phone"
+                                    data-ls="showinfo:1; offsetxin:100lw; durationin:1500; delayin:2000;">
+                                    Multi-tower gated residential community with landscaped gardens, <br>
+                                    security, parking & premium lifestyle amenities.
+                                </p>
+
+                                <!-- VIDEO BUTTON -->
+                                <div style="font-size:15px; top:78%; left:32px;" class="ls-l ls-hide-phone"
+                                    data-ls="offsetyin:40; delayin:3000;">
+                                    <div class="simple-video-play d-flex">
+                                        <div class="position-relative d-inline-block">
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=bh-klGboIg8"
+                                                class="rounded-circle position-relative bg-white" style="z-index: 10">
+                                                <i
+                                                    class="icon-play color-dark position-relative top-50 start-50 translate-middle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                              
+                            </div>
+                            <!-- END SLIDE 2 -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--============== Slider Area End ==============-->
+
+        <!-- =============== Listing Category Start ================-->
+
+        <!-- FULL SPECIFICATIONS MARQUEE WITH UNIQUE PREMIUM DESIGN -->
+
+        <div class="marquee-sec">
+            <div class="container">
+                <div class="spec-marquee-container">
+                    <div class="spec-marquee-track">
+
+                        <!-- BOXES SET #1 FULL DATA FROM IMAGE -->
+
+                        <div class="spec-box">
+                            <!-- <img src="assets/images/icon/building.png"> -->
+                            <h5>R.C.C Structure</h5>
+                            <p>Structure earthquake resistant R.C.C framed structure with outer and internal wall of red
+                                bricks.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Bedrooms & Living/Dining</h5>
+                            <p>Master Bedroom: Wooden flooring.<br>Living/Dining: Vitrified double charged
+                                tiles.<br>Wall finish: Plantic emulsion/OBD.<br>Ceiling: OBD finish.<br>Balconies:
+                                Non-skid ceramic tiles.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Toilets</h5>
+                            <p>Flooring: Antiskid ceramic tiles.<br>Wall tiles upto 7ft height.<br>Ceiling: OBD with
+                                false ceiling.<br>Counter: Granite.<br>Sanitary: Premium quality range.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Doors & Windows</h5>
+                            <p>Entrance doors: 8’x3’6” opening with timber & laminated flush shutter.<br>
+                                Internal doors: Wooden frame + laminated shutter.<br>
+                                Windows: UPVC with mosquito mesh shutters.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Kitchen</h5>
+                            <p>Flooring: Vitrified tiles.<br>Dado: Ceramic tiles upto 2ft above counter.<br>Counter:
+                                Granite.<br>Fittings: Branded sink & mixers.<br>Cabinets below & above counter.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Staircase</h5>
+                            <p>Flooring: Granite.<br>Railings: Painted MS railing.<br>Wall finish: OBD / distemper on
+                                Planter.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Fire Safety</h5>
+                            <p>Fire fighting system in each block.<br>External yard hydrants.<br>Manual fire alarm &
+                                talk-back system.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>External Wall Finishes</h5>
+                            <p>Wall finish: Cement-based paint.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Security & Home Automation</h5>
+                            <p>CCTV cameras in lobby.<br>24×7 security.<br>Power backup.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Brand List</h5>
+                            <p>Tiles: Kajaria/Somany.<br>Doors: Century/Greenply.<br>Hardware:
+                                Dorset/Harrison/Goorej.<br>Sanitary: Jaguar/Hindware.<br>Electrical:
+                                Havells/Anchor.<br>Paint: Asian/Berger/Nerolac.</p>
+                        </div>
+
+                        <div class="spec-box">
+                            <h5>Other Features</h5>
+                            <p>Telephone points, TV point in all rooms, centralized garbage chute, provision of inverter
+                                wiring.</p>
+                        </div>
+
+
+                        <!-- SET #2 DUPLICATE -->
+                        <div class="spec-box">
+
+                            <h5>R.C.C Structure</h5>
+                            <p>Structure earthquake resistant R.C.C framed structure with outer and internal wall of red
+                                bricks.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Bedrooms & Living/Dining</h5>
+                            <p>Master Bedroom: Wooden flooring.<br>Living/Dining: Vitrified tiles.<br>Balconies:
+                                Non‑skid ceramic tiles.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Toilets</h5>
+                            <p>Antiskid tiles, ceramic wall tiles upto 7ft, granite counter, premium sanitary.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Doors & Windows</h5>
+                            <p>Timber/wooden frame doors, UPVC windows with mesh shutters.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Kitchen</h5>
+                            <p>Granite counter, vitrified flooring, branded fittings, SS sink.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Staircase</h5>
+                            <p>Granite flooring with MS railing.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Fire Safety</h5>
+                            <p>Fire hydrants, alarm system, fire fighting network.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>External Wall Finish</h5>
+                            <p>Cement‑based paint finish.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Security System</h5>
+                            <p>CCTV, 24×7 security & power backup.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Brand List</h5>
+                            <p>Kajaria, Jaguar, Havells, Century Ply, Goorej, Asian Paints.</p>
+                        </div>
+
+                        <div class="spec-box">
+
+                            <h5>Other Features</h5>
+                            <p>TV points, telephone points, garbage chute.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- =============== Listing Category End ================-->
+
+        <!--========= Featured Listings Properties Start =========-->
+        <div class="full-row bg-white straight-shape shape-bg-light py-5">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-6 text-center">
+                        <span class="tagline bg-secondary text-white px-2 mb-2 d-inline-block">Our Projects</span>
+                        <h3 class="main-title mb-4">Featured Real Estate Projects</h3>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Project 1 -->
+                    <div class="col-lg-6">
+                        <div class="project-box p-4 shadow-sm rounded-3 h-100">
+
+                            <!-- Image -->
+                            <div class="project-img mb-3">
+                                <img src="assets/images/project1.jpg" class="img-fluid rounded-3" alt="Project Image">
+                            </div>
+
+                            <h4 class="project-title mb-2">PS Apartment</h4>
+                            <p class="project-desc">
+                                Priyam Shaurya Apartments is a premium residential project designed for modern living.
+                                Featuring spacious layouts, greenery and excellent connectivity — perfect for families.
+                            </p>
+
+                            <!-- Read More Button -->
+                            <a href="ps-apartment.html" class="btn btn-primary btn-sm mt-2">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-lg-6">
+                        <div class="project-box p-4 shadow-sm rounded-3 h-100">
+
+                            <!-- Image -->
+                            <div class="project-img mb-3">
+                                <img src="assets/images/project2.jpg" class="img-fluid rounded-3" alt="Project Image">
+                            </div>
+
+                            <h4 class="project-title mb-2">Your Home Prosperity</h4>
+                            <p class="project-desc">
+                                A thoughtfully planned residential community offering peaceful living, premium
+                                facilities,
+                                secured surroundings, and beautifully crafted homes.
+                            </p>
+
+                            <!-- Read More Button -->
+                            <a href="home-prosperity.html" class="btn btn-primary btn-sm mt-2">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--========== Featured Listings Properties End ==========-->
+
+        <!--============= Partner Carousel Start ================-->
+        <section class="about-section py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <!-- Left Image -->
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="assets/images/about-img.jpg" alt="About Us" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h5 class="sub-heading">ABOUT US</h5>
+                            <p>    Founded by a team of young and dynamic entrepreneurs with over 20 years of
+    combined experience, our company is built on a foundation of quality, trust, and
+    commitment. We bring a fresh perspective to the real estate industry, combining
+    innovative ideas with a deep understanding of the market. Our focus is on delivering
+    high-quality residential, commercial, and industrial projects that meet the evolving
+    needs of modern buyers and investors.</p>
+
+                            <p class="mt-3 text-muted">
+                                 At the heart of our success is a dedication to client satisfaction. We believe that
+    trust is earned through transparency, integrity, and an unwavering commitment to
+    excellence. Each project we undertake is crafted with meticulous attention to detail,
+    using sustainable practices and the latest technology to create spaces that are both
+    functional and aesthetically inspiring.
+                            </p>
+
+                            <a href="about.html" class="btn-about mt-4">Learn More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="full-row straight-shape shape-bg-light" style="background: #fff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="mb-4 d-flex flex-wrap align-items-center">
+                            <h3 class="main-title color-dark me-4">Floor Plan Overview</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Unit A -->
+                    <div class="col-md-4">
+                        <div class="floor-box">
+                            <span class="plan-badge">Unit Plan</span>
+                            <img src="assets/images/flor-plans/3.png" alt="Unit A">
+
+                            <div class="floor-content">
+                                <h4>Unit Plan - A</h4>
+                            </div>
+
+                            <div class="floor-hover-panel">
+                                <h5>Unit Plan - A</h5>
+                                <ul>
+                                    <li>2 Bedrooms</li>
+                                    <li>2 Toilet + Living + Kitchen + Store</li>
+                                    <li>Carpet Area 775 Sq Ft</li>
+                                    <li>Built Up Area 960 Sq Ft</li>
+                                    <li>Sellable Area 1275 Sq Ft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit B -->
+                    <div class="col-md-4">
+                        <div class="floor-box">
+                            <span class="plan-badge">Unit Plan</span>
+                            <img src="assets/images/flor-plans/5.png" alt="Unit B">
+
+                            <div class="floor-content">
+                                <h4>Unit Plan - B</h4>
+                            </div>
+
+                            <div class="floor-hover-panel">
+                                <h5>Unit Plan - B</h5>
+                                <ul>
+                                    <li>2 Bedrooms</li>
+                                    <li>2 Toilet + Kid's Room + Living + Kitchen</li>
+                                    <li>Carpet Area 820 Sq Ft</li>
+                                    <li>Built Up Area 1010 Sq Ft</li>
+                                    <li>Sellable Area 1330 Sq Ft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit C -->
+                    <div class="col-md-4">
+                        <div class="floor-box">
+                            <span class="plan-badge">Unit Plan</span>
+                            <img src="assets/images/flor-plans/7.png" alt="Unit C">
+
+                            <div class="floor-content">
+                                <h4>Unit Plan - C</h4>
+                            </div>
+
+                            <div class="floor-hover-panel">
+                                <h5>Unit Plan - C</h5>
+                                <ul>
+                                    <li>3 Bedrooms</li>
+                                    <li>3 Toilet + Living + Kitchen</li>
+                                    <li>Carpet Area 1050 Sq Ft</li>
+                                    <li>Built Up Area 1300 Sq Ft</li>
+                                    <li>Sellable Area 1745 Sq Ft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- row -->
+            </div>
+        </div>
+
+        <!--============= Partner Carousel End ===============-->
+
+        <!--=========== Testimonial Section Start ============-->
+        <div class="full-row bg-white straight-shape shape-bg-light shape-end">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="d-flex justify-content-center flex-column text-center">
+                            <span class="tagline bg-secondary color-white px-2 mb-2 mx-auto">Testimonial</span>
+                            <h3 class="main-title mb-5">Best of Client Reviews</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel 3block-carusel">
+                            <!-- Testimonial 1 -->
+                            <div class="item">
+                                <div class="testimonial-block-2">
+                                    <div class="entry-wrapper">
+                                        <div class="quote-icon"><img src="assets/images/quotation.png" alt=""></div>
+                                        <div class="entry-content">
+                                            <p>
+                                                "I had a wonderful experience purchasing my home through this project.
+                                                The location, planning, and overall quality exceeded my expectations.
+                                                The team guided me professionally throughout the process."
+                                            </p>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <div class="image-avata">
+                                                <img class="rounded-circle me-2" src="assets/images/testimonials2.png"
+                                                    alt="avata">
+                                            </div>
+                                            <div class="about-avata">
+                                                <div class="d-table">by <span class="name text-dark">Rahul Sharma</span>
+                                                </div>
+                                                <span class="d-table designation">Home Buyer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="item">
+                                <div class="testimonial-block-2">
+                                    <div class="entry-wrapper">
+                                        <div class="quote-icon"><img src="assets/images/quotation.png" alt=""></div>
+                                        <div class="entry-content">
+                                            <p>
+                                                "The amenities, green spaces, and the overall environment make this
+                                                project
+                                                perfect for families. The team was very responsive and made everything
+                                                smooth and transparent."
+                                            </p>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <div class="image-avata">
+                                                <img class="rounded-circle me-2" src="assets/images/testimonials3.png"
+                                                    alt="avata">
+                                            </div>
+                                            <div class="about-avata">
+                                                <div class="d-table">by <span class="name text-dark">Aisha Verma</span>
+                                                </div>
+                                                <span class="d-table designation">Working Professional</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="item">
+                                <div class="testimonial-block-2">
+                                    <div class="entry-wrapper">
+                                        <div class="quote-icon"><img src="assets/images/quotation.png" alt=""></div>
+                                        <div class="entry-content">
+                                            <p>
+                                                "A great investment opportunity! The project is located in a
+                                                fast-growing
+                                                area and offers excellent long-term value. The construction quality and
+                                                project management are impressive."
+                                            </p>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <div class="image-avata">
+                                                <img class="rounded-circle me-2" src="assets/images/testimonials4.png"
+                                                    alt="avata">
+                                            </div>
+                                            <div class="about-avata">
+                                                <div class="d-table">by <span class="name text-dark">Vikram Patel</span>
+                                                </div>
+                                                <span class="d-table designation">Property Investor</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="item">
+                                <div class="testimonial-block-2">
+                                    <div class="entry-wrapper">
+                                        <div class="quote-icon"><img src="assets/images/quotation.png" alt=""></div>
+                                        <div class="entry-content">
+                                            <p>
+                                                "This project stands out for its transparent documentation,
+                                                helpful staff, and well-planned design. I am extremely satisfied
+                                                with my purchase and would definitely recommend it."
+                                            </p>
+                                        </div>
+                                        <div class="entry-footer">
+                                            <div class="image-avata">
+                                                <img class="rounded-circle me-2" src="assets/images/testimonials5.png"
+                                                    alt="avata">
+                                            </div>
+                                            <div class="about-avata">
+                                                <div class="d-table">by <span class="name text-dark">Preeti Kaur</span>
+                                                </div>
+                                                <span class="d-table designation">Government Employee</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============= Testimonial Section End ============-->
+
+        <!--============ Today Sale Section Start ============-->
+
+        <!-- <div class="full-row straight-shape shape-bg-secondary shape-end shape-size-1">
+            <div class="container">
+            <div class="row justify-content-center mb-4">
+            <div class="col-lg-8 text-center">
+                <span class="tagline bg-secondary text-white px-2 mb-3 d-inline-block">Location Advantage</span>
+                <h3 class="main-title text-dark">Prime Connectivity Highlights</h3>
+            </div>
+        </div>
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 align-items-end g-1">
+                    <div class="col">                        
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/2.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">Los Angeles</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 765 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/1.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">Miami</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 472 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/1.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">Miami</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 472 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/3.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">New Mexico</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 342 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/4.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">Florida</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 342 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/5.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">New York</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 984 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/7.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">Las Vegas</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 589 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-block-1">
+                            <div class="entry-wrapper">
+                                <div class="entry-thumbnail">
+                                    <img src="assets/images/location/6.webp" alt="property listing">
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper">
+                                <div class="entry-header">
+                                    <h5 class="entry-title"><a href="property-grid-v1.html">Chicago</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>[ 234 Listing ]</p>
+                                </div>
+                                <div class="entry-footer">
+                                    <a href="property-grid-v1.html" class="btn-link color-white hover-color-primary">View Details</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!--============= Today Sale Section End =============-->
+
+        <!--============== Blog Section Start ==============-->
+
+        <section class="marquee-wrapper">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <h3 class="main-title mb-5">Amenities</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- LINE 1 -->
+            <div class="marquee marquee-left">
+                <div class="marquee-track">
+
+                    <div class="m-box">
+                        <img src="assets/images/gate.png">
+                        <span>ENTRY GATE</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/weightlifter.png">
+                        <span>GYM</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/playground.png">
+                        <span>KIDS' PLAYGROUND</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/house.png">
+                        <span>GREEN AREA</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/shopping-center.png">
+                        <span>SHOPPING CENTRE</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/night-club.png">
+                        <span>CLUB</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/gate.png">
+                        <span>ENTRY GATE</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/weightlifter.png">
+                        <span>GYM</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/playground.png">
+                        <span>KIDS' PLAYGROUND</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/house.png">
+                        <span>GREEN AREA</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/shopping-center.png">
+                        <span>SHOPPING CENTRE</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/night-club.png">
+                        <span>CLUB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LINE 2 -->
+            <div class="marquee marquee-right">
+                <div class="marquee-track">
+
+                    <div class="m-box">
+                        <img src="assets/images/SMART-HOME.png">
+                        <span>SMART HOME</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/swimming-pool.png">
+                        <span>POOL</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/waste.png">
+                        <span>WASTE MANAGEMENT</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/cyber-security.png">
+                        <span>24X7 SECURITY</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/generator.png">
+                        <span>POWER BACKUP</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/charging-station.png">
+                        <span>EV CHARGING</span>
+                    </div>
+                    <div class="m-box">
+                        <img src="assets/images/SMART-HOME.png">
+                        <span>SMART HOME</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/swimming-pool.png">
+                        <span>POOL</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/waste.png">
+                        <span>WASTE MANAGEMENT</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/cyber-security.png">
+                        <span>24X7 SECURITY</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/generator.png">
+                        <span>POWER BACKUP</span>
+                    </div>
+
+                    <div class="m-box">
+                        <img src="assets/images/charging-station.png">
+                        <span>EV CHARGING</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--============== Footer Section Start ==============-->
+       <footer class="footer-light bg-light full-row p-0 footer-two real-estate-footer">
+            <div class="full-row py-5" style="background:#0b2c3f; color:#fff;">
+                <div class="container">
+                    <div class="row g-5">
+
+                        <!-- Left Logo & Intro -->
+                        <div class="col-lg-5">
+                            <div class="widget footer-widget widget-about">
+                                <img src="assets/images/logo/bewin-white.png" alt="Real Estate Logo"
+                                    style="max-width:130px; margin-bottom:20px;">
+                                <h3 class="widget-title" style="color:#f5d07e;">India’s Trusted Real Estate Platform
+                                </h3>
+                                <p style="color: #fff;">
+                                    From buying a new home to investing in premium properties, we connect you with
+                                    India’s top
+                                    real estate opportunities with trust and transparency.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Side Columns -->
+                        <div class="col-lg-7">
+                            <div class="row">
+
+                                <!-- Quick Links -->
+                                <div class="col-md-4">
+                                    <div class="widget footer-widget footer-nav">
+                                        <h4 class="widget-title mb-4" style="color:#f5d07e;">Quick Links</h4>
+                                        <ul class="list-unstyled">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="ps-apartment.html">Project</a></li>
+                                            <li><a href="gallery.html">Gallery</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Us -->
+                                <div class="col-md-8">
+                                    <div class="widget footer-widget footer-nav">
+                                        <h4 class="widget-title mb-4" style="color:#f5d07e;">Contact Us</h4>
+
+                                      <ul class="contact-info list-unstyled mt-3">
+
+    <li>
+        <a style="color:#fff;" href="tel:+91-9559853222">
+            <i class="fa-solid fa-phone-volume me-2"></i>
+            +91-9559853222, +91-9956259444
+        </a>
+    </li>
+
+    <li style="color:#fff;">
+        <i class="fa-solid fa-envelope me-2"></i>
+        info@teamshaurya.com
+    </li>
+
+    <li style="color:#fff;">
+        <i class="fa-solid fa-location-dot me-2"></i>
+        Sec-14, Vrindavan Yojna, Raebareli Road, Lucknow
+    </li>
+
+</ul>
+
+
+
+                                        <!-- Social Icons -->
+                                      <div class="widget footer-widget social-widget mt-4">
+                                            <a href="https://www.facebook.com/profile.php?id=61584291022015#" class="me-2"><i class="icon-facebook"></i></a>
+                                            <a href="https://www.instagram.com/teamshauryainfrazone/" class="me-2"><i class="icon-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/company/team-shaurya/about/?viewAsMember=true" class="me-2"><i class="icon-linkedin"></i></a>
+                                            <a href="https://www.youtube.com/@teamshauryaInfrazone" class="me-2"><i class="icon-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Scroll to top -->
+                    <div id="scroll" title="Scroll back to top">
+                        <span class="icon-arrow-up-right"></span>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+        <!--================= Footer Section End ================-->
+
+        <!--============== Copyright Section Start ==============-->
+                     <div class="copyright">
+    <div class="container py-4">
+        <div class="row">
+
+            <!-- Left: Company Name -->
+            <div class="col-lg-7">
+                <span class="color-white mb-0">
+                    Copyright ©2025 
+                    <strong>Team Shaurya Infrazone Private Limited</strong>. 
+                    All Rights Reserved.
+                </span>
+            </div>
+
+            <!-- Right: Designed By -->
+           <div class="col-lg-5 text-lg-end text-center">
+                <span class="color-white" style="opacity:0.9;">
+                    Designed by <strong>Auctech</strong>
+                </span>
+            </div>
+
+        </div>
+    </div>
+                     </div>
+
+
+        <!--============== Copyright Section End ==============-->
+    </div>
+
+
+    <!-- Popup overlay -->
+    <div id="sitePopup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle"
+        aria-hidden="true">
+        <div class="popup-card" role="document">
+            <button class="popup-close-x" id="popupCloseX" aria-label="Close popup">&times;</button>
+
+            <!-- image (replace src with your image path) -->
+            <img src="assets/images/popup-img.jpeg" alt="Popup image">
+
+            <div class="popup-body">
+                <!-- Contact button (change href as needed) -->
+                <a class="btn btn-contact" id="contactBtn"
+                    href="mailto:someone@example.com?subject=Contact%20from%20Website">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-social right">
+        <a class="fb" href="https://www.facebook.com/profile.php?id=61584291022015#" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+
+        <a class="yt" href="https://www.youtube.com/@teamshauryaInfrazone" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+
+        <a class="ln" href="https://www.linkedin.com/company/team-shaurya/about/?viewAsMember=true" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+
+        <a class="ig" href="https://www.instagram.com/teamshauryainfrazone/" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+    </div>
+
+    <style>
+        .floating-social.right {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999999;
+        }
+
+        /* Common style */
+        .floating-social a {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 5px 0 0 5px;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Brand colors */
+        .floating-social a.fb {
+            background: #1877f2;
+        }
+
+        /* Facebook Blue */
+        .floating-social a.yt {
+            background: #FF0000;
+        }
+
+        /* YouTube Red */
+        .floating-social a.ln {
+            background: #0077b5;
+        }
+
+        /* LinkedIn Blue */
+        .floating-social a.ig {
+            background: #E4405F;
+        }
+
+        /* Instagram Pink */
+
+        .floating-social a:hover {
+            transform: translateX(-8px);
+            opacity: 0.9;
+        }
+    </style>
+
+    <script>
+        const popup = document.getElementById('sitePopup');
+        const closeX = document.getElementById('popupCloseX');
+
+        // popup show after 2 sec
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                popup.style.display = "flex";
+            }, 2000);
+        });
+
+        // close button (X)
+        closeX.addEventListener("click", function () {
+            popup.style.display = "none";
+        });
+
+        // click outside to close
+        popup.addEventListener("click", function (e) {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
+
+
+    <!-- Javascript Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/greensock.js"></script>
+    <script src="assets/js/layerslider.transitions.js"></script>
+    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/range/tmpl.js"></script>
+    <script src="assets/js/range/jquery.dependClass.js"></script>
+    <script src="assets/js/range/draggable.js"></script>
+    <script src="assets/js/range/jquery.slider.js"></script>
+    <script src="assets/js/paraxify.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $('#slider').layerSlider({
+            sliderVersion: '6.0.0',
+            type: 'responsive',
+            responsiveUnder: 0,
+            layersContainer: 1280,
+            maxRatio: 1,
+            slideBGSize: 'auto',
+            navButtons: false,
+            navStartStop: false,
+            hideUnder: 0,
+            hideOver: 100000,
+            skin: 'numbers',
+            thumbnailNavigation: 'disabled',
+            skinsPath: 'assets/skins/',
+            height: 600
+        });
+    </script>
+</body>
+
+<!-- Mirrored from unicoderbd.com/template/bewin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jun 2025 05:19:02 GMT -->
+
+</html>
